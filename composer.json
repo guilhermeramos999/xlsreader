@@ -1,0 +1,8 @@
+{
+    "autoload": {
+        "psr-4": {"Project\\Pdo\\": "src/"}
+    },
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.22"
+    }
+}
