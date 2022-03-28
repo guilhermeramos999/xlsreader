@@ -14,8 +14,8 @@ class Conn
     public function startConnection()
     {
         try{
-            return $this->connection = new PDO($this->dsn,$this->user,$this->pass);
             $this->createTable();
+            return $this->connection = new PDO($this->dsn,$this->user,$this->pass);
         } catch(Exception $e){
             echo $e->getMessage();
         }
