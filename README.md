@@ -9,7 +9,7 @@ This application requires PhpOffice to run.
 Install composer if you don't have it and run the command below after clone or download the repository:
 
 ``` sh
-composer require phpoffice/spreadsheet
+composer require phpoffice/phpspreadsheet
 ```
 
 Open the class conn.php on the path "xlsreader\src\Infraestructure" and fill the variables ```$dsn```, ```$user``` and ```$pass``` with your database credencials, following the example below:
