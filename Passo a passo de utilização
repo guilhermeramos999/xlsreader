@@ -1,5 +1,0 @@
-# xlsreader
-
-``` sh
-composer require phpoffice/spreadsheet
-```
