@@ -35,8 +35,6 @@ while($csv->valid()){
         }catch(PDOException $e){
             throw new PDOException($e->getMessage(),$e->getCode());
         }
-    }else{
-        echo "Planilha vazia\n\r";
     }
 }
 

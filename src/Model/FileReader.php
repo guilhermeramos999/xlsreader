@@ -11,7 +11,7 @@ class FileReader
 {
     public function readFile()
     {
-        $xlsPath = __DIR__. '/Xls/teste.xlsx';
+        $xlsPath = __DIR__. '/Xls/records.xlsx';
         $reader = IOFactory::createReaderForFile($xlsPath);
         $reader->setReadDataOnly('true');
         $spreadsheet = $reader->load($xlsPath);

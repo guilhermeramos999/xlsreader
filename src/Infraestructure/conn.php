@@ -9,16 +9,18 @@ class Conn
 {
     private $dsn = 'mysql:localhost;dbname:escola';
     private $user = 'root';
-    private $pass = '';
+    private $pass = 'Guilherme10@';
+    public $connection;
 
     public function startConnection()
     {
         try{
+            $this->connection = new PDO($this->dsn,$this->user,$this->pass);
             $this->createTable();
-            return $this->connection = new PDO($this->dsn,$this->user,$this->pass);
         } catch(Exception $e){
             echo $e->getMessage();
         }
+        return $this->connection;
     }
 
     public function createTable()
