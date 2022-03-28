@@ -9,12 +9,12 @@ class Conn
 {
     private $dsn = 'mysql:localhost;dbname:escola';
     private $user = 'root';
-    private $pass = 'Guilherme10@';
+    private $pass = '';
 
     public function startConnection()
     {
         try{
-            $this->connection = new PDO($this->dsn,$this->user,$this->pass);
+            return $this->connection = new PDO($this->dsn,$this->user,$this->pass);
             $this->createTable();
         } catch(Exception $e){
             echo $e->getMessage();
